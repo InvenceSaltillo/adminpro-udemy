@@ -17,7 +17,7 @@ export class BreadcrumbsComponent implements OnInit {
 
     this.getDataRoute()
     .subscribe( data => {
-      console.log( data );
+      // console.log( data );
       this.titulo = data.titulo;
       this.title.setTitle( this.titulo );
 
@@ -26,7 +26,8 @@ export class BreadcrumbsComponent implements OnInit {
         content: this.titulo
       };
 
-      this.meta.updateTag( metaTag );
+      this.meta.addTag( {property: 'og:image',
+      content: 'https://api.beatbanks.lat/avatars/avatarDefault.jpg'}, true );
 
     });
 
