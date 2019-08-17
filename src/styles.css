@@ -9,3 +9,9 @@
 .miAnchor:hover {
     color: #009efb !important;
 }
+
+.w-150 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
